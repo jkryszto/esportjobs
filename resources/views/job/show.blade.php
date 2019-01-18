@@ -3,8 +3,12 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-10">
+            <h2 class="offer-title">
+                {{$job->title}}
+            </h2>
+
+            {{-- <div class="card">
                 <div class="card-header">Job offer</div>
 
                 <div class="card-body">
@@ -48,7 +52,7 @@
                         </div> 
                     {!! Form::close() !!}
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

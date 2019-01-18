@@ -10499,3 +10499,144 @@ body {
   padding: 40px;
 }
 
+.btn-cta {
+  letter-spacing: -0.47px!important;
+  line-height: 23px!important;
+  font-weight: 300!important;
+  background: #2E5BFF!important;
+  opacity: .7!important;
+  color: #fff!important;
+  /* font-size: 12px; */
+  padding: 7px 25px 7px 25px!important;
+}
+
+.dropdown-toggle::after {
+  display: none!important;
+}
+
+.index-header {
+  font-weight: 300;
+  /* line-height: 23px; */
+  font-size: 32px;
+}
+
+.btn-c {
+  font-weight: 300;
+  color: #fff;
+  line-height: 23px;
+}
+
+.btn-marketing {
+  background: #33AC2E!important;
+  opacity: .7!important;
+}
+.b-marketing {
+  border-left-color: #33AC2E;
+  opacity: .7;
+}
+
+.btn-development {
+  background: #00C1D4;
+  opacity: 0.7;
+}
+.b-development {
+  border-left-color: #00C1D4;
+  opacity: .7;
+}
+
+.btn-management {
+  background: #8798AD;
+opacity: 0.7;
+}
+.b-management {
+  border-left-color: #8798AD;
+  opacity: .7;
+}
+
+.btn-creative {
+  background: #F7C137;
+opacity: 0.7;
+}
+.b-creative {
+  border-left-color: #F7C137;
+  opacity: .7;
+}
+
+.btn-community {
+  background: #D63649;
+  opacity: .7;
+}
+.b-community {
+  border-left-color: #D63649;
+  opacity: .7;
+}
+
+.btn-social-media {
+  background: #8C54FF;
+opacity: 0.7;
+}
+.b-social-media {
+  border-left-color: #8c54ff;
+  opacity: .7;
+}
+
+.index-categories-list {
+  list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job-list {
+  background: #F8F8F8;
+  border-left-width: 7px;
+  border-left-style: solid;
+}
+
+.job-title {
+  color: #8798AD;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1.21px;
+  font-weight: 400;
+}
+.job-title a:hover, .job-company a:hover {
+  text-decoration: none;
+}
+
+.job-company a {
+  color: #B0BAC9;
+  font-size: 14px;
+}
+
+.job-location {
+  font-size: 14px;
+  color: #B0BAC9;
+}
+
+.amount {
+  color: #59BC55;
+  text-transform: uppercase;
+  letter-spacing: 1.21px;
+  font-weight: 300;
+  display: inline;
+}
+
+.currency {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.21px;
+  color: #8798AD;
+}
+
+.l-m {
+  color: #2E384D;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.offer-title {
+  color: #8798AD;
+  letter-spacing: 1.21px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}

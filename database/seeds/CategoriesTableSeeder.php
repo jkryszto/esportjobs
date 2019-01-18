@@ -35,5 +35,10 @@ class CategoriesTableSeeder extends Seeder
             'name' => 'Social Media',
             'alias' => 'social-media'
         ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Community',
+            'alias' => 'community'
+        ]);
     }
 }
