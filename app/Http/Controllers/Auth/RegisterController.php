@@ -49,12 +49,12 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            // 'logo' => ['required', 'image'],
+            'logo' => ['required', 'image'],
             'name' => ['required', 'unique:companies'],
-            // 'employees' => ['required', 'string'],
-            // 'location' => ['required', 'string'],
-            // 'url' => ['required', 'url'],
-            // 'description' => ['required', 'string'],
+            'employees' => ['required', 'string'],
+            'location' => ['required', 'string'],
+            'url' => ['required', 'url'],
+            'description' => ['required', 'string'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:6', 'confirmed'],
         ]);
@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
-        // $logo = $this->upload_logo($user, $data['logo']);
+        $logo = $this->upload_logo($user, $data['logo']);
 
         $user->company()->create([
             'name' => $data['name'],
@@ -87,8 +87,8 @@ class RegisterController extends Controller
         return $user;
     }
 
-    // public function upload_logo($user, $logo)
-    // {
-    //    return $logo->store('users/'. $user->id. '/company', 'public');
-    // }
+    public function upload_logo($user, $logo)
+    {
+       return $logo->store('users/'. $user->id. '/company', 'public');
+    }
 }
